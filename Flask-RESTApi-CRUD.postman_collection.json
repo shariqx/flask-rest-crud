@@ -1,0 +1,141 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Flask-RESTApi-CRUD",
+		"_postman_id": "c881377e-0a77-564f-9a7c-7c2e4771212f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create New Student",
+			"request": {
+				"url": "http://127.0.0.1:5000/api/students/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "fc714d8e5b82438a93a95baa493ff45b",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dob\": \"30-05-1886\",\n    \"last_name\": \"John\",\n    \"first_name\": \"McManan\",\n    \"amount_due\": \"0$\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Student By Id",
+			"request": {
+				"url": "http://127.0.0.1:5000/api/students/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "fc714d8e5b82438a93a95baa493ff45b",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dob\": \"30-05-1886\",\n    \"last_name\": \"John\",\n    \"first_name\": \"McManan\",\n    \"amount_due\": \"0$\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Student Details",
+			"request": {
+				"url": "http://127.0.0.1:5000/api/students/update",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "fc714d8e5b82438a93a95baa493ff45b",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"amount_due\": \"30$\", \n        \"dob\": \"17-03-1993\",\n        \"first_name\": \"Krishna\",\n        \"last_name\": \"Bakshi\",\n        \"student_id\": 1\n }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Student by ID",
+			"request": {
+				"url": "http://127.0.0.1:5000/api/students/delete/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "fc714d8e5b82438a93a95baa493ff45b",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"amount_due\": \"30$\", \n        \"dob\": \"17-03-1993\",\n        \"first_name\": \"Krishna\",\n        \"last_name\": \"Bakshi\",\n        \"student_id\": 1\n }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Students",
+			"request": {
+				"url": "http://127.0.0.1:5000/api/students",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "fc714d8e5b82438a93a95baa493ff45b",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"amount_due\": \"30$\", \n        \"dob\": \"17-03-1993\",\n        \"first_name\": \"Krishna\",\n        \"last_name\": \"Bakshi\",\n        \"student_id\": 1\n }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
