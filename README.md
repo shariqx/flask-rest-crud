@@ -1,8 +1,15 @@
-# full_stack_web_python_flask_react_bootstrap
-This repository contains source codes for a full stack app developed with python flask/SQLite (backend) and Reactjs/Bootstrap for frontend
+# Flask REST-enabled application to Perform CRUD(Create, Read, Update, Delete)
 
-The tutorial is available on medium: 
+Contains source code in Python
 
-You can view the running application on Youtube: 
-* frontend - https://www.youtube.com/watch?v=2LiQJG02Fhs
-* backend - TDB
+Contains postman file to test the server
+
+Contains SQLITE database
+
+Submitted by for AI In Enterprise Group assignment:
+
+Prof: Sajeeva 
+
+Student 1: Shariq Shaikh 
+
+Student 2: Krishna Bakshi
